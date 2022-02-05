@@ -1,0 +1,86 @@
+:root{
+    --darker: #6B705C;
+    --dark: #CB997E;
+    --medium: #B7B7A4;
+    --light: #DDBEA9;
+    --lighter: #FFE8D6;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(var(--medium), var(--darker));
+    padding-top: 30px;
+}
+
+.main_container{
+    height: 60%;
+    padding: 10px;
+    margin: auto;
+    width: 40%;
+    box-shadow: 2px 2px 15px var(--medium), -2px -2px 15px var(--medium);
+    background-color: var(--lighter);
+    display: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.traco{
+    margin: auto;
+    width: 70%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--darker), rgba(0, 0, 0, 0)  );
+    height: 2px;
+}
+.inputes{
+    margin: auto;
+    width: 80%;
+    padding-top: 20px;
+}
+.row{
+    justify-content: space-between;
+    display: flex;
+}
+.botao{
+    margin: auto;
+    padding-top: 50px;
+}
+.inputbox{
+    margin: 10px;
+    color: black;
+}
+.inputbox > input{
+    background-color: var(--light);
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    padding: 10px;
+}
+button{
+    margin: auto;
+    border-radius: 50px;
+    background-color: var(--darker);
+    color: var(--lighter);
+    cursor: pointer;
+    padding: 3px 20px;
+    font-size: 25px;
+    border: none;
+}
+footer{
+    height: 15%;
+    margin-top: 50px;
+    text-align: center;
+    background-color: black;
+    padding-top: 25px;
+    color: var(--lighter);
+}
